@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="383.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Java2.HistorikController">
+   <children>
+      <Button fx:id="LogOut" layoutX="569.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#LogOutClicked" text="Logga ut" />
+      <Accordion layoutX="85.0" layoutY="58.0" />
+      <TableView fx:id="table" layoutX="81.0" layoutY="100.0" prefHeight="184.0" prefWidth="506.0">
+         <columns>
+            <TableColumn fx:id="KolumnDatum" prefWidth="75.0" text="Datum" />
+            <TableColumn fx:id="KolumnGenre" prefWidth="64.800048828125" text="Genre" />
+            <TableColumn fx:id="KolumnProduktionsland" prefWidth="126.39996337890625" text="Produktionsland" />
+            <TableColumn fx:id="KolumnTitel" prefWidth="84.79998779296875" text="Titel" />
+            <TableColumn fx:id="KolumnFörfattare" text="Författare" />
+            <TableColumn fx:id="ColumnReturned" prefWidth="75.0" text="Återlämnad" />
+         </columns>
+      </TableView>
+      <Button fx:id="GoTillbaka" layoutX="21.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#BackClicked" text="Tillbaka" />
+      <Label layoutX="239.0" layoutY="33.0" prefHeight="49.0" prefWidth="191.0" text="Lånehistorik">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

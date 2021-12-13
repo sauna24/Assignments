@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="538.0" maxWidth="1132.0" minHeight="538.0" minWidth="1132.0" prefHeight="538.0" prefWidth="1132.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Java2.UtloggadController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="884.0" minWidth="10.0" prefWidth="879.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="365.0" minWidth="10.0" prefWidth="233.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="515.0" minHeight="10.0" prefHeight="403.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <children>
+      <GridPane prefHeight="543.0" prefWidth="879.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="831.0" minWidth="10.0" prefWidth="21.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="858.0" minWidth="10.0" prefWidth="840.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="858.0" minWidth="10.0" prefWidth="29.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="115.0" minHeight="0.0" prefHeight="83.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="424.0" minHeight="10.0" prefHeight="407.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="69.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TableView fx:id="table" focusTraversable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <columns>
+                <TableColumn fx:id="ColumnTitel" editable="false" prefWidth="137.0" resizable="false" text="Titel" />
+                  <TableColumn fx:id="ColumnNamn" editable="false" prefWidth="143.0" resizable="false" text="Författare/Regissör" />
+                <TableColumn fx:id="ColumnGenre" editable="false" prefWidth="87.0" resizable="false" text="Genre" />
+                  <TableColumn fx:id="ColumnAmne" editable="false" prefWidth="92.0" text="Ämnesord" />
+                  <TableColumn fx:id="ColumnKurs" editable="false" prefWidth="89.0" resizable="false" text="Kurslitteratur" />
+                  <TableColumn fx:id="ColumnTillganglig" editable="false" prefWidth="126.0" resizable="false" text="Tillgänglighet" />
+                  <TableColumn fx:id="ColumnPlats" editable="false" prefWidth="90.0" resizable="false" text="Hyllplats" />
+                  <TableColumn fx:id="ColumnID" editable="false" prefWidth="71.0" resizable="false" text="ISBN" />
+              </columns>
+            </TableView>
+            <GridPane GridPane.columnIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.0" minWidth="10.0" prefWidth="156.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="198.0" minWidth="10.0" prefWidth="186.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="160.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.0" minWidth="10.0" prefWidth="107.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="339.0" minWidth="10.0" prefWidth="137.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="361.0" minWidth="10.0" prefWidth="94.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="Titel" promptText="Titel" GridPane.rowIndex="1" />
+                  <Button fx:id="Search" defaultButton="true" mnemonicParsing="false" onMouseClicked="#TrySearch" text="Sök" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="25.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <TextField fx:id="Namn" prefHeight="25.0" prefWidth="136.0" promptText="Författare / Regissör" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="Genre" promptText="Genre" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="ID" promptText="ISBN / ID" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="Amne" promptText="Ämne" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+      <GridPane GridPane.columnIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="253.0" minHeight="10.0" prefHeight="140.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="235.0" minHeight="10.0" prefHeight="204.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TitledPane animated="false" expanded="false" focusTraversable="false" prefHeight="198.0" prefWidth="233.0" text="Inloggning">
+               <content>
+                  <AnchorPane maxHeight="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="153.0" prefWidth="211.0">
+                     <children>
+                        <GridPane layoutX="4.0" layoutY="4.0" prefHeight="146.0" prefWidth="200.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <GridPane GridPane.rowIndex="2">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="98.0" minWidth="10.0" prefWidth="95.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.0" minWidth="6.0" prefWidth="11.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="107.0" minWidth="10.0" prefWidth="94.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Button fx:id="Login" defaultButton="true" focusTraversable="false" mnemonicParsing="false" onMouseClicked="#TryLogin" prefHeight="25.0" prefWidth="95.0" text="Logga In" />
+                                    <Button fx:id="Reg" cancelButton="true" focusTraversable="false" mnemonicParsing="false" onMouseClicked="#Registration" prefHeight="25.0" prefWidth="99.0" text="Registrering" GridPane.columnIndex="2" />
+                                 </children>
+                              </GridPane>
+                              <PasswordField fx:id="Password" alignment="CENTER" promptText="Lösenord" GridPane.rowIndex="1" />
+                              <TextField fx:id="Username" alignment="CENTER" promptText="Användarnamn" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </TitledPane>
+         </children>
+      </GridPane>
+   </children>
+</GridPane>

@@ -1,0 +1,9 @@
+C:\Users\jimmy\source\repos\upp1\upp1\bin\Debug\upp1.exe.config
+C:\Users\jimmy\source\repos\upp1\upp1\bin\Debug\upp1.exe
+C:\Users\jimmy\source\repos\upp1\upp1\bin\Debug\upp1.pdb
+C:\Users\jimmy\source\repos\upp1\upp1\obj\Debug\upp1.csprojAssemblyReference.cache
+C:\Users\jimmy\source\repos\upp1\upp1\obj\Debug\upp1.Properties.Resources.resources
+C:\Users\jimmy\source\repos\upp1\upp1\obj\Debug\upp1.csproj.GenerateResource.cache
+C:\Users\jimmy\source\repos\upp1\upp1\obj\Debug\upp1.exe
+C:\Users\jimmy\source\repos\upp1\upp1\obj\Debug\upp1.pdb
+C:\Users\jimmy\source\repos\upp1\upp1\obj\Debug\upp1.Form1.resources
