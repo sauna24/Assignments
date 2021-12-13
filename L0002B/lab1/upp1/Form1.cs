@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-//Jimmy Pasehke 930808-3915 jimpas-2       L0002B
+//Jimmy Pasehke L0002B
 
 namespace upp1
 {   /// <summary>

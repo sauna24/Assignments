@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//Jimmy Pasehke 930808-3915 jimpas-2       L0002B
+//Jimmy Pasehke L0002B
 namespace upp1
 {
     static class Program

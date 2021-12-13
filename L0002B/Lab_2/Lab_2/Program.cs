@@ -1,4 +1,4 @@
-﻿// Jimmy Pasehke  930808-3915 	L0002B
+﻿// Jimmy Pasehke L0002B
 
 using System;
 using System.IO;
